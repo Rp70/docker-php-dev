@@ -84,6 +84,5 @@ if [ "$SSHD_SERVER" = "yes" ]; then
     echo "RevokedKeys /etc/ssh/revoked_keys" >> /etc/ssh/sshd_config && \
     true
 else
-    #rm -f /etc/supervisor/conf.d/sshd.conf
-    true
+    rm -f /etc/supervisor/conf.d/openssh.conf
 fi
